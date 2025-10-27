@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAN 2101: Chapter 14 - Vocabulary and Pronunciation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .welcome {
+            background: #e3f2fd;
+            padding: 30px;
+            margin: 0;
+            border-bottom: 4px solid #1e88e5;
+        }
+        
+        .welcome h2 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+        
+        .objetivos {
+            background: #fff3e0;
+            padding: 20px;
+            border-left: 5px solid #ff9800;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 5px solid #1e88e5;
+        }
+        
+        .section h2 {
+            color: #1565c0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h3 {
+            color: #1976d2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .vocab-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .vocab-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        .vocab-spanish {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 5px;
+        }
+        
+        .vocab-english {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .vocab-pronunciation {
+            color: #ff6f00;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        .pronunciation-tip {
+            background: #fff9e6;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        
+        .pronunciation-tip strong {
+            color: #f57c00;
+        }
+        
+        .practice-box {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
+        
+        .practice-box h4 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .example {
+            background: #f3e5f5;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #9c27b0;
+            margin: 15px 0;
+        }
+        
+        .warning {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 15px 0;
+        }
+        
+        .voicethread-box {
+            background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .voicethread-box h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .voicethread-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .voicethread-box li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .voicethread-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .accordion {
+            background: white;
+            border: 2px solid #1e88e5;
+            border-radius: 8px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: #1e88e5;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .accordion-header:hover {
+            background: #1976d2;
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            display: none;
+        }
+        
+        .accordion-content.active {
+            display: block;
+        }
+        
+        .accordion-arrow {
+            transition: transform 0.3s;
+        }
+        
+        .accordion-arrow.active {
+            transform: rotate(180deg);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        
+        table th {
+            background: #1e88e5;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .categoria {
+            background: #1e88e5;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .recordatorio {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .recordatorio h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .vocab-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Chapter 14: Academic Life</h1>
+            <p>Vocabulary and Pronunciation - Asynchronous Lesson</p>
+            <p><strong>SPAN 2101 | Due: Wednesday, October 29</strong></p>
+        </header>
+        
+        <div class="welcome">
+            <h2>🎯 Welcome</h2>
+            <p>In this asynchronous lesson you will:</p>
+            <div class="objetivos">
+                <strong>✅ Review Chapter 14 vocabulary</strong><br>
+                ✅ Learn correct pronunciation of difficult words<br>
+                ✅ Practice with examples in context<br>
+                ✅ Prepare to record 14+ words on VoiceThread
+            </div>
+            <p style="margin-top: 15px;"><strong>⏰ Estimated time:</strong> 45-60 minutes</p>
+        </div>
+        
+        <div class="content">
+            
+            <!-- SECTION 1: VERBS -->
+            <section class="section">
+                <h2>📝 Verbs - Los Verbos</h2>
+                <span class="categoria">CATEGORY 1: VERBS</span>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">acabar</div>
+                        <div class="vocab-english">to finish; to run out of</div>
+                        <div class="vocab-pronunciation">🔊 Pronunciation: a-ca-BAR (stress on last syllable)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">asistir</div>
+                        <div class="vocab-english">to attend</div>
+                        <div class="vocab-pronunciation">🔊 Pronunciation: a-sis-TIR (stress on last syllable)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">dejar</div>
+                        <div class="vocab-english">to leave</div>
+                        <div class="vocab-pronunciation">🔊 Pronunciation: de-JAR (stress on last syllable)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">estudiar</div>
+                        <div class="vocab-english">to study</div>
+                        <div class="vocab-pronunciation">🔊 Pronunciation: es-tu-DIAR (careful: "ia" is a diphthong)</div>
+                    </div>
+                </div>
+                
+                <div class="pronunciation-tip">
+                    <strong>💡 Pronunciation tip:</strong><br>
+                    <strong>estudiar</strong>: The ending "-iar" has a DIPHTHONG. Say "es-tu-DIAR" (3 syllables), NOT "es-tu-di-ar" (4 syllables).<br>
+                    Similar to: "cambiar", "copiar", "enviar"
+                </div>
+                
+                <div class="practice-box">
+                    <h4>🔁 Practice these verbs in context:</h4>
+                    <p>• Voy a <strong>acabar</strong> la tarea antes de las ocho. (I'm going to finish my homework before 8.)</p>
+                    <p>• Necesito <strong>asistir</strong> a la clase de química. (I need to attend chemistry class.)</p>
+                    <p>• Voy a <strong>dejar</strong> mis libros en la biblioteca. (I'm going to leave my books at the library.)</p>
+                    <p>• Tengo que <strong>estudiar</strong> para el examen final. (I have to study for the final exam.)</p>
+                </div>
+            </section>
+            
+            <!-- SECTION 2: ACADEMIC LIFE NOUNS -->
+            <section class="section">
+                <h2>🔗 Academic Life Nouns</h2>
+                <span class="categoria">CATEGORY 2: NOUNS</span>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la agenda</div>
+                        <div class="vocab-english">planner; calendar</div>
+                        <div class="vocab-pronunciation">🔊 a-GEN-da (soft G)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la biblioteca</div>
+                        <div class="vocab-english">library</div>
+                        <div class="vocab-pronunciation">🔊 bi-blio-TE-ca (4 syllables)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la semana</div>
+                        <div class="vocab-english">week</div>
+                        <div class="vocab-pronunciation">🔊 se-MA-na</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">el descanso</div>
+                        <div class="vocab-english">rest; break</div>
+                        <div class="vocab-pronunciation">🔊 des-CAN-so</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">el examen</div>
+                        <div class="vocab-english">exam</div>
+                        <div class="vocab-pronunciation">🔊 e-XA-men (stress on XA)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">el horario</div>
+                        <div class="vocab-english">schedule</div>
+                        <div class="vocab-pronunciation">🔊 o-RA-rio (silent H!)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">el informe (escolar/académico)</div>
+                        <div class="vocab-english">report (card)</div>
+                        <div class="vocab-pronunciation">🔊 in-FOR-me</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la práctica</div>
+                        <div class="vocab-english">practice</div>
+                        <div class="vocab-pronunciation">🔊 PRÁC-ti-ca (accent on Á)</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">el programa (del curso)</div>
+                        <div class="vocab-english">syllabus</div>
+                        <div class="vocab-pronunciation">🔊 pro-GRA-ma</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la prueba</div>
+                        <div class="vocab-english">quiz; test</div>
+                        <div class="vocab-pronunciation">🔊 PRUE-ba (diphthong "ue")</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la tarjeta de identificación</div>
+                        <div class="vocab-english">student I.D. card</div>
+                        <div class="vocab-pronunciation">🔊 tar-JE-ta de i-den-ti-fi-ca-CIÓN</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">la tarea</div>
+                        <div class="vocab-english">homework; task</div>
+                        <div class="vocab-pronunciation">🔊 ta-RE-a (3 syllables, not "tar-ea")</div>
+                    </div>
+                </div>
+                
+                <div class="pronunciation-tip">
+                    <strong>💡 Important tips:</strong><br>
+                    • <strong>horario</strong>: The H is SILENT (not pronounced). Say "o-RA-rio", NOT "ho-ra-rio"<br>
+                    • <strong>biblioteca</strong>: Be careful with all syllables: bi-blio-TE-ca (4 syllables)<br>
+                    • <strong>práctica</strong>: Has written accent on Á
+                </div>
+            </section>
+            
+            <!-- SECTION 3: COGNATES -->
+            <section class="section">
+                <h2>🌐 Cognates - Easy Words (but watch pronunciation!)</h2>
+                <span class="categoria">CATEGORY 3: COGNATES</span>
+                
+                <p>These words are similar to English, but <strong>watch out for pronunciation!</strong></p>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>View cognates and correct pronunciation</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Spanish</th>
+                                    <th>English</th>
+                                    <th>Pronunciation</th>
+                                    <th>⚠️ Watch Out</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>el calendario</strong></td>
+                                    <td>calendar</td>
+                                    <td>ca-len-DA-rio</td>
+                                    <td>Don't say "calendar" in Spanish</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>la clase</strong></td>
+                                    <td>class</td>
+                                    <td>CLA-se</td>
+                                    <td>The "a" is clear, not "cless"</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>difícil</strong></td>
+                                    <td>difficult</td>
+                                    <td>di-FÍ-cil</td>
+                                    <td>Accent on Í</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>fácil</strong></td>
+                                    <td>easy</td>
+                                    <td>FÁ-cil</td>
+                                    <td>Accent on Á</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>la universidad</strong></td>
+                                    <td>university</td>
+                                    <td>u-ni-ver-si-DAD</td>
+                                    <td>Stress at the end, not "uniVERsity"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="warning">
+                            <strong>⚠️ COMMON ERROR:</strong><br>
+                            Many students say "u-ni-VER-si-dad" (like English "uniVERsity").<br>
+                            <strong>CORRECT:</strong> u-ni-ver-si-DAD (stress on the last syllable)
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECTION 4: ADJECTIVES -->
+            <section class="section">
+                <h2>✨ Adjectives - Los Adjetivos</h2>
+                <span class="categoria">CATEGORY 4: ADJECTIVES</span>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">entusiasta</div>
+                        <div class="vocab-english">enthusiastic</div>
+                        <div class="vocab-pronunciation">🔊 en-tu-sias-TA (diphthong "ia")</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">excelente</div>
+                        <div class="vocab-english">excellent</div>
+                        <div class="vocab-pronunciation">🔊 ex-ce-LEN-te</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">interesante</div>
+                        <div class="vocab-english">interesting</div>
+                        <div class="vocab-pronunciation">🔊 in-te-re-SAN-te</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">listo/a</div>
+                        <div class="vocab-english">smart; ready</div>
+                        <div class="vocab-pronunciation">🔊 LIS-to/ta</div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <div class="vocab-spanish">tranquilo/a</div>
+                        <div class="vocab-english">calm; relaxed</div>
+                        <div class="vocab-pronunciation">🔊 tran-QUI-lo/la</div>
+                    </div>
+                </div>
+                
+                <div class="pronunciation-tip">
+                    <strong>💡 Tip:</strong> In "entusiasta", the ending "-siasta" has the diphthong "ia". Don't separate the vowels.
+                </div>
+            </section>
+            
+            <!-- SECTION 5: DIFFICULT WORDS -->
+            <section class="section">
+                <h2>🔥 Words with Difficult Pronunciation</h2>
+                <span class="categoria">SPECIAL PRACTICE</span>
+                
+                <p>These words require special attention. Practice slowly first:</p>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>1️⃣ Words with G/J</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="example">
+                            <strong>la agenda</strong> → a-GEN-da<br>
+                            • The G sounds soft (like "go"), NOT like the jota sound<br>
+                            • Think: "aHENda" (soft h sound in English)<br><br>
+                            
+                            <strong>el programa</strong> → pro-GRA-ma<br>
+                            • Soft G as well<br>
+                            • Careful: don't say "próugram"
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice:</h4>
+                            <p>Tengo mi <strong>agenda</strong> y el <strong>programa</strong> del curso.</p>
+                            <p>(I have my planner and the course syllabus.)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>2️⃣ Words with silent H</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="example">
+                            <strong>el horario</strong> → o-RA-rio (NOT "ho-ra-rio")<br>
+                            • The H is NOT pronounced<br>
+                            • In English it would be like: "o-RAH-rio"<br><br>
+                            
+                            <strong>Rule:</strong> In Spanish, the H is ALWAYS silent (no sound)
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice:</h4>
+                            <p>Mi <strong>horario</strong> está completo. (say: o-RA-rio)</p>
+                            <p>(My schedule is full.)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>3️⃣ Words with diphthongs</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="example">
+                            <strong>estudiar</strong> → es-tu-DIAR (3 syllables)<br>
+                            • "ia" is a diphthong (2 vowels together in 1 syllable)<br>
+                            • NOT: "es-tu-di-ar" (4 syllables) ❌<br><br>
+                            
+                            <strong>la prueba</strong> → PRUE-ba<br>
+                            • "ue" is a diphthong<br>
+                            • Like in English "pray-ba"<br><br>
+                            
+                            <strong>entusiasta</strong> → en-tu-sias-TA<br>
+                            • "ia" is also a diphthong
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice:</h4>
+                            <p>Necesito <strong>estudiar</strong> para la <strong>prueba</strong>. Estoy muy <strong>entusiasta</strong>.</p>
+                            <p>(I need to study for the quiz. I'm very enthusiastic.)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>4️⃣ Words with written accent (tilde)</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="example">
+                            <strong>difícil</strong> → di-FÍ-cil (accent on Í)<br>
+                            <strong>fácil</strong> → FÁ-cil (accent on Á)<br>
+                            <strong>examen</strong> → e-XA-men (stress on XA, but no written accent)<br>
+                            <strong>práctica</strong> → PRÁC-ti-ca (accent on Á)<br>
+                            <strong>biblioteca</strong> → bi-blio-TE-ca (stress on TE, but no written accent)
+                        </div>
+                        
+                        <div class="warning">
+                            <strong>⚠️ Important rule:</strong><br>
+                            When a word has an ACCENT MARK (´), that vowel is pronounced LOUDER.<br>
+                            If it doesn't have an accent mark, follow normal stress rules.
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice:</h4>
+                            <p>El <strong>examen</strong> es <strong>difícil</strong>, pero con <strong>práctica</strong> será <strong>fácil</strong>.</p>
+                            <p>(The exam is difficult, but with practice it will be easy.)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>5️⃣ Words with double C (CC) - COMMON PROBLEM!</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="warning">
+                            <strong>⚠️ VERY COMMON MISTAKE:</strong><br>
+                            Many English speakers pronounce CC incorrectly because in English, double consonants sound like one sound.<br>
+                            In Spanish, <strong>CC = TWO different sounds</strong>: [k] + [s] or [k] + [th] (in Spain)
+                        </div>
+                        
+                        <div class="example">
+                            <strong>How CC works in Spanish:</strong><br><br>
+                            
+                            <strong>acción</strong> → ac-CIÓN<br>
+                            • First C = [k] sound (like "k" in "cat")<br>
+                            • Second C = [s] sound (like "s" in "see") in Latin America<br>
+                            • Second C = [th] sound (like "th" in "think") in Spain<br>
+                            • Think: "ak-SION" or "ak-THION"<br>
+                            • DO NOT say: "a-SHON" ❌<br><br>
+                            
+                            <strong>lección</strong> → lec-CIÓN<br>
+                            • "lek-SION" or "lek-THION"<br>
+                            • DO NOT say: "le-SHON" ❌<br><br>
+                            
+                            <strong>sección</strong> → sec-CIÓN<br>
+                            • "sek-SION" or "sek-THION"<br>
+                            • DO NOT say: "se-SHON" ❌<br><br>
+                            
+                            <strong>dirección</strong> → di-rec-CIÓN<br>
+                            • "di-rek-SION" or "di-rek-THION"<br>
+                            • DO NOT say: "di-re-SHON" ❌
+                        </div>
+                        
+                        <div class="pronunciation-tip">
+                            <strong>💡 Physical trick:</strong><br>
+                            • For the first C: Put the back of your tongue against your soft palate (like saying "k")<br>
+                            • For the second C: Immediately move your tongue forward behind your teeth (like saying "s")<br>
+                            • It should feel like TWO distinct movements: "k" → "s"<br>
+                            • Practice: "ak-ak-ak-SION" → "ak-SION" → "acción"
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice these words slowly (repeat 5 times):</h4>
+                            <p>ac-CIÓN → acción (action)</p>
+                            <p>lec-CIÓN → lección (lesson)</p>
+                            <p>sec-CIÓN → sección (section)</p>
+                            <p>di-rec-CIÓN → dirección (address/direction)</p>
+                            <p>se-lec-CIÓN → selección (selection)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>6️⃣ Intervocalic consonants (consonants between vowels)</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="warning">
+                            <strong>⚠️ IMPORTANT DIFFERENCE:</strong><br>
+                            In English, consonants between vowels often become softer or change sounds.<br>
+                            In Spanish, consonants between vowels stay <strong>CRISP and CLEAR</strong>!
+                        </div>
+                        
+                        <div class="example">
+                            <strong>Common intervocalic consonants:</strong><br><br>
+                            
+                            <strong>D between vowels:</strong><br>
+                            • <strong>estudiar</strong> → es-tu-DIAR<br>
+                            &nbsp;&nbsp;The D stays strong, like "d" in "dog"<br>
+                            &nbsp;&nbsp;NOT soft like "th" in "mother" ❌<br><br>
+                            
+                            • <strong>todo</strong> → TO-do<br>
+                            &nbsp;&nbsp;Clear "d" sound in the middle<br>
+                            &nbsp;&nbsp;NOT "TO-tho" ❌<br><br>
+                            
+                            <strong>T between vowels:</strong><br>
+                            • <strong>biblioteca</strong> → bi-blio-TE-ca<br>
+                            &nbsp;&nbsp;The T is sharp, like "t" in "top"<br>
+                            &nbsp;&nbsp;NOT soft like "d" in English "water" ❌<br><br>
+                            
+                            • <strong>práctica</strong> → PRÁC-ti-ca<br>
+                            &nbsp;&nbsp;Clear "t" sound<br>
+                            &nbsp;&nbsp;NOT like "prattica" with soft "d" ❌<br><br>
+                            
+                            <strong>P between vowels:</strong><br>
+                            • <strong>calendario</strong> → ca-len-DA-rio<br>
+                            &nbsp;&nbsp;Clear consonants throughout<br><br>
+                            
+                            <strong>N between vowels:</strong><br>
+                            • <strong>semana</strong> → se-MA-na<br>
+                            &nbsp;&nbsp;Each syllable is distinct: se-MA-na<br>
+                            &nbsp;&nbsp;NOT blended together ❌
+                        </div>
+                        
+                        <div class="pronunciation-tip">
+                            <strong>💡 Key principle:</strong><br>
+                            In Spanish, consonants ALWAYS keep their original sound, even between vowels.<br>
+                            • English: "water" → sounds like "wader" (t becomes d)<br>
+                            • Spanish: "tarea" → sounds like "ta-RE-a" (t stays t!)
+                        </div>
+                        
+                        <div class="practice-box">
+                            <h4>🔁 Practice maintaining clear consonants:</h4>
+                            <p><strong>estudiar</strong> → es-tu-DIAR (clear D, not "th")</p>
+                            <p><strong>biblioteca</strong> → bi-blio-TE-ca (sharp T, not soft d)</p>
+                            <p><strong>práctica</strong> → PRÁC-ti-ca (crisp T)</p>
+                            <p><strong>tarea</strong> → ta-RE-a (clear T at the beginning)</p>
+                            <p><strong>semana</strong> → se-MA-na (distinct syllables)</p>
+                            <p><strong>calendario</strong> → ca-len-DA-rio (all consonants clear)</p>
+                        </div>
+                        
+                        <div class="example">
+                            <strong>Why this matters:</strong><br>
+                            If you soften intervocalic consonants like in English, native speakers might not understand you!<br><br>
+                            
+                            Example:<br>
+                            • If you say "estuTHiar" (with soft d) → sounds wrong<br>
+                            • Correct: "estu-DIAR" (with crisp d) → sounds natural ✓<br><br>
+                            
+                            • If you say "biblio-DE-ca" (with soft t) → confusing<br>
+                            • Correct: "biblio-TE-ca" (with sharp t) → clear ✓
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- COMPLETE VOCABULARY LIST -->
+            <section class="section">
+                <h2>📋 Complete Vocabulary List (26+ words)</h2>
+                <span class="categoria">QUICK REFERENCE</span>
+                
+                <p style="margin-bottom: 20px;">Here are ALL the words from Chapter 14. For VoiceThread, you must record <strong>at least 14 words</strong> from this list:</p>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>View complete alphabetical list (26+ words)</span>
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Spanish</th>
+                                    <th>English</th>
+                                    <th>Pronunciation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td><strong>acabar</strong></td><td>to finish; to run out of</td><td>a-ca-BAR</td></tr>
+                                <tr><td>2</td><td><strong>la agenda</strong></td><td>planner; calendar</td><td>a-GEN-da</td></tr>
+                                <tr><td>3</td><td><strong>asistir</strong></td><td>to attend</td><td>a-sis-TIR</td></tr>
+                                <tr><td>4</td><td><strong>la biblioteca</strong></td><td>library</td><td>bi-blio-TE-ca</td></tr>
+                                <tr><td>5</td><td><strong>el calendario</strong></td><td>calendar</td><td>ca-len-DA-rio</td></tr>
+                                <tr><td>6</td><td><strong>la clase</strong></td><td>class</td><td>CLA-se</td></tr>
+                                <tr><td>7</td><td><strong>dejar</strong></td><td>to leave</td><td>de-JAR</td></tr>
+                                <tr><td>8</td><td><strong>el descanso</strong></td><td>rest; break</td><td>des-CAN-so</td></tr>
+                                <tr><td>9</td><td><strong>difícil</strong></td><td>difficult</td><td>di-FÍ-cil</td></tr>
+                                <tr><td>10</td><td><strong>entusiasta</strong></td><td>enthusiastic</td><td>en-tu-sias-TA</td></tr>
+                                <tr><td>11</td><td><strong>estudiar</strong></td><td>to study</td><td>es-tu-DIAR</td></tr>
+                                <tr><td>12</td><td><strong>el examen</strong></td><td>exam</td><td>e-XA-men</td></tr>
+                                <tr><td>13</td><td><strong>excelente</strong></td><td>excellent</td><td>ex-ce-LEN-te</td></tr>
+                                <tr><td>14</td><td><strong>fácil</strong></td><td>easy</td><td>FÁ-cil</td></tr>
+                                <tr><td>15</td><td><strong>el horario</strong></td><td>schedule</td><td>o-RA-rio</td></tr>
+                                <tr><td>16</td><td><strong>el informe</strong></td><td>report (card)</td><td>in-FOR-me</td></tr>
+                                <tr><td>17</td><td><strong>interesante</strong></td><td>interesting</td><td>in-te-re-SAN-te</td></tr>
+                                <tr><td>18</td><td><strong>listo/a</strong></td><td>smart; ready</td><td>LIS-to/ta</td></tr>
+                                <tr><td>19</td><td><strong>la práctica</strong></td><td>practice</td><td>PRÁC-ti-ca</td></tr>
+                                <tr><td>20</td><td><strong>el programa</strong></td><td>syllabus</td><td>pro-GRA-ma</td></tr>
+                                <tr><td>21</td><td><strong>la prueba</strong></td><td>quiz; test</td><td>PRUE-ba</td></tr>
+                                <tr><td>22</td><td><strong>la semana</strong></td><td>week</td><td>se-MA-na</td></tr>
+                                <tr><td>23</td><td><strong>la tarea</strong></td><td>homework; task</td><td>ta-RE-a</td></tr>
+                                <tr><td>24</td><td><strong>la tarjeta de identificación</strong></td><td>student I.D. card</td><td>tar-JE-ta</td></tr>
+                                <tr><td>25</td><td><strong>tranquilo/a</strong></td><td>calm; relaxed</td><td>tran-QUI-lo/la</td></tr>
+                                <tr><td>26</td><td><strong>la universidad</strong></td><td>university</td><td>u-ni-ver-si-DAD</td></tr>
+                            </tbody>
+                        </table>
+                        
+                        <p style="margin-top: 20px;"><strong>Note:</strong> This is a partial list. The chapter has more words. Choose the ones you need to practice most.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- VOICETHREAD PREPARATION -->
+            <div class="voicethread-box">
+                <h3>🎤 ASSIGNMENT: VoiceThread Recording</h3>
+                <p><strong>Due date: [Instructor will complete]</strong></p>
+                
+                <h4 style="color: white; margin-top: 20px;">Instructions:</h4>
+                <ul>
+                    <li>You must record <strong>AT LEAST 14 vocabulary words</strong> from Chapter 14</li>
+                    <li>For each word, say:
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>1. The word in Spanish (clear and slow)</li>
+                            <li>2. The meaning in English</li>
+                            <li>3. An example sentence in Spanish</li>
+                        </ul>
+                    </li>
+                    <li>Recording example: "Biblioteca. Library. Voy a la biblioteca todos los días."</li>
+                    <li>Focus on words that are difficult for you to pronounce</li>
+                    <li>Speak slowly and clearly - speed doesn't matter, clarity does!</li>
+                </ul>
+                
+                <h4 style="color: white; margin-top: 20px;">✅ Recommended words to practice:</h4>
+                <ul>
+                    <li><strong>biblioteca</strong> (4 syllables, intervocalic T)</li>
+                    <li><strong>horario</strong> (silent H)</li>
+                    <li><strong>estudiar</strong> (diphthong + intervocalic D)</li>
+                    <li><strong>universidad</strong> (stress at the end)</li>
+                    <li><strong>difícil / fácil</strong> (with accent mark)</li>
+                    <li><strong>entusiasta</strong> (diphthong)</li>
+                    <li><strong>la agenda</strong> (soft G)</li>
+                    <li><strong>el programa</strong> (soft G)</li>
+                    <li><strong>la prueba</strong> (diphthong)</li>
+                    <li><strong>calendario</strong> (5 syllables, intervocalic consonants)</li>
+                    <li><strong>excelente</strong> (double C: ex-ce-LEN-te)</li>
+                    <li><strong>interesante</strong></li>
+                    <li><strong>práctica</strong> (with accent + intervocalic T)</li>
+                    <li><strong>tarjeta de identificación</strong> (double C: i-den-ti-fi-ca-CIÓN)</li>
+                    <li><strong>WORDS WITH CC:</strong> acción, lección, sección, dirección (practice the [k]+[s] sound!)</li>
+                </ul>
+            </div>
+            
+            <!-- FINAL REMINDERS -->
+            <div class="recordatorio">
+                <h3>💡 Tips for Your Recording</h3>
+                <p><strong>BEFORE recording:</strong></p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li>Review this complete lesson</li>
+                    <li>Practice difficult words out loud 3-5 times</li>
+                    <li>Prepare your 14+ words and sentences</li>
+                </ul>
+                
+                <p style="margin-top: 20px;"><strong>DURING recording:</strong></p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li>Find a quiet place</li>
+                    <li>Speak SLOWLY - don't rush</li>
+                    <li>If you make a mistake, breathe and try again</li>
+                    <li>It's okay if it's not perfect - the important thing is to practice!</li>
+                </ul>
+                
+                <p style="margin-top: 20px; font-size: 1.2em;"><strong>You can do this! 💪📚</strong></p>
+            </div>
+            
+            <!-- RUBRIC -->
+            <section class="section">
+                <h2>📊 Grading Rubric</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Criterion</th>
+                            <th>Points</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Quantity</strong></td>
+                            <td>25 pts</td>
+                            <td>Recorded 14+ different vocabulary words</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pronunciation</strong></td>
+                            <td>35 pts</td>
+                            <td>Clear and correct pronunciation (stress, diphthongs, consonants)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sentences</strong></td>
+                            <td>25 pts</td>
+                            <td>Each word has a correct example sentence</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clarity</strong></td>
+                            <td>15 pts</td>
+                            <td>Clear audio, no noise, appropriate pace</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>TOTAL</strong></td>
+                            <td><strong>100 points</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+        </div>
+    </div>
+    
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.accordion-arrow');
+            
+            content.classList.toggle('active');
+            arrow.classList.toggle('active');
+        }
+        
+        // Close all accordions on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const allContents = document.querySelectorAll('.accordion-content');
+            allContents.forEach(content => {
+                content.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
